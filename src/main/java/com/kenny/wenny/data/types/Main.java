@@ -6,5 +6,14 @@ public class Main {
         // Variables are camelCase
         String message = "Hello World!";
         System.out.println(message);
+
+        // Basic primitive type
+        int numberOfTimesToRepeat = 50;
+        for (int i = 0; i < numberOfTimesToRepeat; i++) {
+            System.out.println("Oh yeah");
+        }
+
+        int anotherNumber = 10;
+        System.out.println("50 divided by 10 is " + (numberOfTimesToRepeat / anotherNumber));
     }
 }
