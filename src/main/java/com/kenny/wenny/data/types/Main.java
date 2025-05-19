@@ -18,5 +18,13 @@ public class Main {
 
         message = "I've now re-assigned the value of message";
         System.out.println(message);
+
+        String upperCaseMessage = message.toUpperCase();
+        System.out.println("Upper case: " + upperCaseMessage);
+
+        String firstMessage = "Hello";
+        String secondMessage = firstMessage;
+        firstMessage = "Goodbye";
+        System.out.println(secondMessage); // Hello
     }
 }
