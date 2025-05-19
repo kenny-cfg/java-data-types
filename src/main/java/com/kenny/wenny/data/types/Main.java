@@ -1,5 +1,9 @@
 package com.kenny.wenny.data.types;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 // Classes are PascalCase
 public class Main {
     public static void main(String[] args) {
@@ -26,5 +30,16 @@ public class Main {
         String secondMessage = firstMessage;
         firstMessage = "Goodbye";
         System.out.println(secondMessage); // Hello
+
+        int[] myFirstArray = {1, 2, 3};
+        int zerothElement = myFirstArray[0];
+        System.out.println("Zeroth element: " + zerothElement);
+
+        List<Integer> myFirstArrayList = new ArrayList<>();
+        myFirstArrayList.add(1);
+        myFirstArrayList.add(2);
+        for (Integer element : myFirstArrayList) {
+            System.out.println("I got " + element);
+        }
     }
 }
