@@ -15,5 +15,8 @@ public class Main {
 
         int anotherNumber = 10;
         System.out.println("50 divided by 10 is " + (numberOfTimesToRepeat / anotherNumber));
+
+        message = "I've now re-assigned the value of message";
+        System.out.println(message);
     }
 }
