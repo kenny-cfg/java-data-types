@@ -1,8 +1,9 @@
 package com.kenny.wenny.data.types;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 // Classes are PascalCase
 public class Main {
@@ -29,6 +30,7 @@ public class Main {
         String firstMessage = "Hello";
         String secondMessage = firstMessage;
         firstMessage = "Goodbye";
+        System.out.println(firstMessage); // Goodbye
         System.out.println(secondMessage); // Hello
 
         int[] myFirstArray = {1, 2, 3};
@@ -40,6 +42,13 @@ public class Main {
         myFirstArrayList.add(2);
         for (Integer element : myFirstArrayList) {
             System.out.println("I got " + element);
+        }
+
+        Map<String, Integer> ageMap = new HashMap<>();
+        ageMap.put("Kenny", 20);
+        ageMap.put("Butter", 25);
+        for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
+            System.out.println("Entry: " + entry.getKey() + " " + entry.getValue());
         }
     }
 }
